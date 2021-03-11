@@ -1,0 +1,22 @@
+CREATE DATABASE	Filmes_exercicio;
+GO
+USE Filmes_exercicio; 
+GO
+
+
+CREATE TABLE Generos
+(
+	idGenero INT PRIMARY KEY IDENTITY,
+	Nome VARCHAR(200) NOT NULL  
+);
+GO
+
+CREATE TABLE Filmes(
+	idFilmes INT PRIMARY KEY  IDENTITY,
+	idGenero INT FOREIGN KEY REFERENCES Generos(idGenero),
+	Titulo VARCHAR (200) NOT NULL
+);
+GO
+
+
+-- DDL (DATA DEFINITION LANGUAGE)

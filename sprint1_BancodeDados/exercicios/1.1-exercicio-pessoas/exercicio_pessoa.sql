@@ -1,0 +1,32 @@
+
+USE Pessoas_exercicio; 
+GO
+
+CREATE TABLE Pessoa(
+	idPessoa INT PRIMARY KEY IDENTITY,
+	nome VARCHAR (200) NOT NULL
+);
+GO
+
+
+CREATE TABLE CNH(
+	idCNH INT PRIMARY KEY IDENTITY,
+	idPessoa INT FOREIGN KEY REFERENCES Pessoa(idPessoa),
+	numero INT NOT NULL
+);
+GO
+
+CREATE TABLE Telefone(
+	idTelefone INT PRIMARY KEY IDENTITY,
+	idPessoa INT FOREIGN KEY REFERENCES Pessoa(idPessoa),
+	numero INT NOT NULL
+);
+GO
+
+CREATE TABLE Email(
+	idEmail INT PRIMARY KEY IDENTITY,
+	idPessoa INT FOREIGN KEY REFERENCES Pessoa(idPessoa),
+	email VARCHAR(200) NOT NULL
+);
+GO
+
