@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\35834520898\\Desktop\\inLock\\API_INLOCK\\Senai_inLock_tarde\\Senai_inLock_tarde\\Senai_inLock_tarde.csproj",
+      "projectUniqueName": "C:\\Users\\35834520898\\Documents\\SENAI_2021\\sprint2_BackEnd\\inLock\\API_INLOCK\\Senai_inLock_tarde\\Senai_inLock_tarde\\Senai_inLock_tarde.csproj",
       "projectName": "Senai_inLock_tarde",
-      "projectPath": "C:\\Users\\35834520898\\Desktop\\inLock\\API_INLOCK\\Senai_inLock_tarde\\Senai_inLock_tarde\\Senai_inLock_tarde.csproj",
+      "projectPath": "C:\\Users\\35834520898\\Documents\\SENAI_2021\\sprint2_BackEnd\\inLock\\API_INLOCK\\Senai_inLock_tarde\\Senai_inLock_tarde\\Senai_inLock_tarde.csproj",
       "packagesPath": "C:\\Users\\35834520898\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\35834520898\\Desktop\\inLock\\API_INLOCK\\Senai_inLock_tarde\\Senai_inLock_tarde\\obj\\",
+      "outputPath": "C:\\Users\\35834520898\\Documents\\SENAI_2021\\sprint2_BackEnd\\inLock\\API_INLOCK\\Senai_inLock_tarde\\Senai_inLock_tarde\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
