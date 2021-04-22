@@ -24,7 +24,7 @@ namespace Senai_inLock_tarde.Interface
 
 
         /// <summary>
-        /// Busca um estudio atravez do seu ID.
+        /// Busca um estudio através do seu ID.
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Um objeto do tipo EstudioDomain que foi buscado</returns>

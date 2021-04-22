@@ -21,7 +21,7 @@ namespace Senai_inLock_tarde.Interface
         List<TipoUsuarioDomain> ListarTodos();
 
         /// <summary>
-        /// Busca um usuario através do seu ID .
+        /// Busca um tipo de Usuario através do seu ID .
         /// </summary>
         /// <param name="id"></param>
         /// <returns>um objeto do tipo JogoDomain que foi buscado </returns>
@@ -33,7 +33,7 @@ namespace Senai_inLock_tarde.Interface
         /// Cadastra um novo Jogo.
         /// </summary>
         /// <param name="novoUsuario"></param>
-        void Cadastrar(TipoUsuarioDomain novoUsuario);
+        void Cadastrar(TipoUsuarioDomain novoTipoUsuario);
 
     }
 }

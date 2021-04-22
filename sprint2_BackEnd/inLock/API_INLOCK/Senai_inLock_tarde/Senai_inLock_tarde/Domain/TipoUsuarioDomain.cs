@@ -11,9 +11,8 @@ namespace Senai_inLock_tarde.Domain
     
     public class TipoUsuarioDomain
     {
-        public int idUsuario { get; set; }
+        public int idTipoUsuario { get; set; }
         public string titulo { get; set; }
-
 
 
     }

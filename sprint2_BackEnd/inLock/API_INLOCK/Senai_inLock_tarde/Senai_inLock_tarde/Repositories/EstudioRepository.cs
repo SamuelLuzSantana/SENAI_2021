@@ -20,10 +20,8 @@ namespace Senai_inLock_tarde.Repositories
         /// initial catalog = nome do banco de dados 
         /// user ID = sa; pwd = 35834520898 = faz a autenticação com o usuario do sql server passando logon e senha
         /// integrated security = true = faz a autenticação com o usuario do sistema (Windows)
-        /// 
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+   
       
 
         public EstudioDomain BuscarPorId(int id)
