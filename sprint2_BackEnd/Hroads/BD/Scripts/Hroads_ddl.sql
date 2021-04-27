@@ -1,30 +1,34 @@
 CREATE DATABASE SENAI_HROADS_TARDE;
-
 USE SENAI_HROADS_TARDE;
+GO
 
-CREATE TABLE TipoHabilidade
-(
-IdTipo INT PRIMARY KEY IDENTITY
-,NomeTipo VARCHAR(500) NOT NULL
+CREATE TABLE TipoHabilidade(
+		IdTipo INT PRIMARY KEY IDENTITY,
+		NomeTipo VARCHAR(500) NOT NULL
 );
+GO
 
 CREATE TABLE Habilidades
 (
 IdHabilidade INT PRIMARY KEY IDENTITY
 ,IdTipo INT FOREIGN KEY REFERENCES TipoHabilidade(IdTipo)
 ,NomeHabilidade VARCHAR(100) NOT NULL
-);
+);GO
 
 CREATE TABLE Classe
 (
 IdClasse INT PRIMARY KEY IDENTITY
 ,NomeClasse VARCHAR(100)
-);
+);GO
+
+
 CREATE TABLE ClasseHabilidade
 (
 IdClasse INT FOREIGN KEY REFERENCES Classe(IdClasse)
 ,IdHabilidade INT FOREIGN KEY REFERENCES Habilidades(IdHabilidade)
-);
+);GO
+
+
 CREATE TABLE Personagens
 (
 IdPersonagem INT PRIMARY KEY IDENTITY
@@ -34,4 +38,24 @@ IdPersonagem INT PRIMARY KEY IDENTITY
 ,CapacidadeMAXMana VARCHAR(300) NOT NULL
 ,DataAtualizacao VARCHAR(200) NOT NULL
 ,DataCriacao VARCHAR(300) NOT NULL
+);GO
+
+CREATE TABLE TiposUsuarios(
+	idTipoUsuarios	INT PRIMARY KEY IDENTITY,
+	nome			VARCHAR(200) NOT NULL				
 );
+GO
+
+CREATE TABLE Usuarios(
+	idUsuario		INT PRIMARY KEY IDENTITY,
+	idTipoUsuarios	INT FOREIGN KEY REFERENCES TiposUsuarios(idTipoUsuarios),
+	Nome			VARCHAR(200) NOT NULL,
+	Email			VARCHAR(200) UNIQUE NOT NULL,
+	Senha			VARCHAR(200) NOT NULL
+);
+GO
+
+
+
+
+
