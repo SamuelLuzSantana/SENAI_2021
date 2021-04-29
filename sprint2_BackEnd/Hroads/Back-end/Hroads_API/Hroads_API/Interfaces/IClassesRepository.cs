@@ -14,7 +14,7 @@ namespace Hroads_API.Interfaces
         /// <summary>
         /// Lista todas as Classes 
         /// </summary>
-        /// <returns>Uma Lista de estúdios</returns>
+        /// <returns>Uma Lista de classes</returns>
         List<Class> Listar();
 
         /// <summary>
@@ -43,10 +43,6 @@ namespace Hroads_API.Interfaces
         /// <param name="id">ID do estudio que será deletada</param>
         void Deletar(int id);
 
-        /// <summary>
-        /// Lista todas as classes com suas determinadas habilidades expecificas da classe
-        /// </summary>
-        /// <returns>Uma lista de classes com suas habilidade</returns>
-        List<Class> ListarClasses();
+        
     }
 }

@@ -97,9 +97,5 @@ namespace Hroads_API.Repositories
             return ctx.Classes.ToList();
         }
 
-        public List<Class> ListarClasses()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

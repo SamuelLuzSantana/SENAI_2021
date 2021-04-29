@@ -47,8 +47,8 @@ namespace Hroads_API.Controllers
         /// <summary>
         /// Buscamos um classe através do seu Id 
         /// </summary>
-        /// <param name="id">id do estudio que sera buscado</param>
-        /// <returns>Um estudio enconrado</returns>
+        /// <param name="id">id da classe que sera buscado</param>
+        /// <returns>Uma classe enconrado</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -92,7 +92,7 @@ namespace Hroads_API.Controllers
         /// <summary>
         /// Deleta Classe existente 
         /// </summary>
-        /// <param name="id">ID do estudio que será deletada</param>
+        /// <param name="id">ID da habilidade que será deletada</param>
         
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

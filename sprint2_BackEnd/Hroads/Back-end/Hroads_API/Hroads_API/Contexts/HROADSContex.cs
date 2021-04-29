@@ -25,12 +25,13 @@ namespace Hroads_API.Contexts
         public virtual DbSet<TiposHabilidade> TiposHabilidades { get; set; }
         public virtual DbSet<TiposUsuario> TiposUsuarios { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
+        public object TiposHabilidade { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=LAB08DESK2101\\SQLEXPRESS; initial catalog=SENAI_HROADS_TARDE;user id=sa; pwd=senai@132");
             }
         }
