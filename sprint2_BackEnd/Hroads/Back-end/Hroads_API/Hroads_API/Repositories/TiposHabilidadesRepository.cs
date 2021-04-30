@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Hroads_API.Repositories
+namespace Hroads_API.Repositories 
 {
-    public class TiposHabilidadesRepository 
+    public class TiposHabilidadesRepository : ITiposHabilidadeRepository
     {
         /// <summary>
         /// Objeto contexto(ctx) por onde serão chamados os metodos do EF Core
@@ -20,7 +20,7 @@ namespace Hroads_API.Repositories
         /// Lista de todos os tipos de habilidades cadastradas no BD 
         /// </summary>
         /// <returns>Uma Lista de tipos de habilidades</returns>
-        List<TiposHabilidade> Listar()
+        public List<TiposHabilidade> Listar()
         {
             return ctx.TiposHabilidades.ToList();
         }
@@ -31,7 +31,7 @@ namespace Hroads_API.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <returns>um tipo de habilidade buscada</returns>
-        TiposHabilidade BuscarPorId(int id)
+        public TiposHabilidade BuscarPorId(int id)
         {
             //retorna a primeira classe encontrada do id da classe informada
             return ctx.TiposHabilidades.FirstOrDefault(t => t.IdTipo == id);
@@ -42,7 +42,7 @@ namespace Hroads_API.Repositories
         /// Cadastra um novo tipo de habilidade
         /// </summary>
         /// <param name="novoTipo">Objeto Tipo que sera cadastrado</param>
-        void Cadastrar(TiposHabilidade novoTipo)
+        public void Cadastrar(TiposHabilidade novoTipo)
         {
             //adicona a nova classe
             ctx.TiposHabilidades.Add(novoTipo);
@@ -56,7 +56,7 @@ namespace Hroads_API.Repositories
         /// </summary>
         /// <param name="id">ID do tipo de habilidade que será atualizada</param>
         /// <param name="tipoAtualizado">Objeto tipoAtualizado com as novas informações</param>
-        void Atualizar(int id, TiposHabilidade tipoAtualizado)
+        public void Atualizar(int id, TiposHabilidade tipoAtualizado)
         {
             TiposHabilidade tipoBuscado = ctx.TiposHabilidades.Find(id);
 
@@ -78,7 +78,7 @@ namespace Hroads_API.Repositories
         /// Deleta uma tipo de habilidade existente 
         /// </summary>
         /// <param name="id">ID do  Tipo de habilidade que será deletada</param>
-        void Deletar(int id)
+        public void Deletar(int id)
         {
 
             //busca uma classe pelo seu id

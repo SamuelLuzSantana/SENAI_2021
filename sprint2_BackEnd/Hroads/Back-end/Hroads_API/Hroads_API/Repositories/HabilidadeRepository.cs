@@ -107,5 +107,6 @@ namespace Hroads_API.Repositories
         {
             return ctx.Habilidades.Include(h => h.IdTipoNavigation).ToList();
         }
+
     }
 }
