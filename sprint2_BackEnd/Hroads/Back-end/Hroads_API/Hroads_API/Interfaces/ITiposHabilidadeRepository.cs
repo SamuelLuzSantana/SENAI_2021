@@ -4,15 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Hroads_API.Interfaces
 {
+    /// <summary>
+    /// Interface referente a TipoHabiliadeRepository
+    /// </summary>
+
     interface ITiposHabilidadeRepository
     {
-        /// <summary>
-        /// Interface referente a TipoHabiliadeRepository
-        /// </summary>
-        interface IHabilidadesRepository
-        {
+       
+       
             /// <summary>
             /// Lista de todos os tipos de habilidades cadastradas no BD 
             /// </summary>
@@ -49,16 +51,10 @@ namespace Hroads_API.Interfaces
             /// <param name="id">ID do  Tipo de habilidade que será deletada</param>
             void Deletar(int id);
 
-        }
+        
 
 
 
-
-        object Listar();
-        object BuscarPorId(int id);
-        void Cadastrar(TiposHabilidade novoTipo);
-        void Atualizar(int id, TiposHabilidade tiposHabilidade);
-        void Deletar(int id);
     }
 
 }
