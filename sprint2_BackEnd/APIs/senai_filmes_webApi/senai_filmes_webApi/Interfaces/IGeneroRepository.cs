@@ -24,7 +24,7 @@ namespace senai_filmes_webApi.Interfaces
         /// </summary>
         /// <param name="id">id do genero que sera buscado</param>
         /// <returns>Um objeto genero que foi buscado</returns>
-        GeneroDomain BuscarPOrId(int id);
+        GeneroDomain BuscarPorId(int id);
 
         /// <summary>
         /// Cadastra um novo genero
